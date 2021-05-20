@@ -1,0 +1,57 @@
+{
+    "name": "webpack-vue-echarts-demo",
+    "version": "1.0.0",
+    "description": "简单封装vue-echarts npm包示例",
+    "main": "/dist/maple.js",
+    "files": [
+        "maple",
+        ".eslintrc.js",
+        ".stylelintrc.js",
+        "package.json",
+        "webpack.config.js",
+        ".babelrc"
+    ],
+    "scripts": {
+        "build": "webpack --progress",
+        "eslint": "eslint --fix --ext .js,.jsx,.vue ./maple",
+        "stylelint": "stylelint --fix ./maple/**/*.css ./maple/**/*.vue --allow-empty-input",
+        "lint": "npm run eslint && npm run stylelint"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.14.3",
+        "@babel/plugin-transform-runtime": "^7.14.3",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.14.2",
+        "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
+        "@vue/babel-preset-jsx": "^1.2.4",
+        "autoprefixer": "^10.2.5",
+        "babel-loader": "^8.2.2",
+        "clean-webpack-plugin": "^4.0.0-alpha.0",
+        "css-loader": "^5.2.4",
+        "css-minimizer-webpack-plugin": "^3.0.0",
+        "eslint": "^7.26.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "^2.23.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.1.0",
+        "eslint-plugin-vue": "^7.9.0",
+        "eslint-webpack-plugin": "^2.5.4",
+        "file-loader": "^6.2.0",
+        "mini-css-extract-plugin": "^1.6.0",
+        "stylelint": "^13.13.1",
+        "stylelint-config-standard": "^22.0.0",
+        "stylelint-webpack-plugin": "^2.1.1",
+        "url-loader": "^4.1.1",
+        "vue-loader": "^15.9.7",
+        "vue-template-compiler": "^2.6.12",
+        "webpack": "^5.37.1",
+        "webpack-cli": "^4.7.0"
+    },
+    "dependencies": {
+        "echarts": "^5.1.1"
+    }
+}
